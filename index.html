@@ -51,7 +51,7 @@ header .button:hover {
 }
 
 header h3 {
-  flex: 2 0 auto;
+  flex: 2 0 300;
   margin: 0 0 20px;
 }
 
@@ -61,14 +61,29 @@ li {
 .subtext {
   color: #777;
 }
+.dot {
+  display: inline-block; 
+  width: 10px; 
+  height: 10px; 
+  line-height: .5; 
+  background: #0a8; 
+  border-radius: 10px;
+}
+  
+@media (max-width: 300px) {
+  h3 {
+    text-align: center;
+  }
+}
 
+/* End Mobile Media Query */
 </style>
 </head>
 <body>
 
 <header>
   <div class="container">
-    <h3>CoCreate <span style="display: inline-block; width: 10px; height: 10px; line-height: .5; background: #0a8; border-radius: 10px;">&nbsp;</span> Live</h3>
+    <h3>CoCreate <span class="dot">&nbsp;</span> Live</h3>
     <a class="button" href="https://bcg.zoom.us/j/2253222477?pwd=RXJZUWZ6QThQUGFqY3VTS1lDYUlHQT09" target="_blank">Join Space</a>
   </div>
 </header>
@@ -83,7 +98,7 @@ li {
   <ul>
     <li>Work in 40 min intervals with 15 min breaks</li>
     <li>Timer on screen share and status in chat</li>
-    <li>Room is open 8-12 and 1-5 EST</li>
+    <li>Room is generaly open 9-12 and 1-5 EST</li>
     <li>Join or leave whenever you want</li>
     <li>Talk or mute whenever you want</li>
   </ul>
